@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320,user-scalable=no">
+<meta http-equiv="pragma" content="no-cache">
+<title>腾讯2016年汽车营销解决方案</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="css/jquery-1.8.3.min.js"></script>
+<script src="css/jquery.fullPage.min.js"></script>
+<script src="css/app.js"></script>
+<script>
+$(function(){
+         var  falg=false;
+		$('#content').fullpage({
+              //anchors: ['page0','page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+              afterLoad:function(link,index){                                      //页面加载操作
+                  if(index==1){
+                     falg=false;
+                  }
+
+             },
+			onLeave:function(link,index,dir){
+                  if(index==1){
+
+                  }
+                  if(index==2){
+                  	return falg;
+                  }
+
+			}
+        });
+        $('#page2').click(function(){
+            falg=true;
+        	$.fn.fullpage.moveTo(2);
+        })
+
+       $('#page3').click(function(){
+        	falg=true;
+        	$.fn.fullpage.moveTo(3);
+        })
+
+        $('#page4').click(function(){
+        	falg=true;
+        	$.fn.fullpage.moveTo(4); 
+        })
+        $('#page5').click(function(){
+        	 falg=true;
+        	 $.fn.fullpage.moveTo(5); 
+        })
+
+        $('#page6').click(function(){
+        	 falg=true;
+        	 $.fn.fullpage.moveTo(6); 
+        })
+      
+})
+function page(index){
+	 $.fn.fullpage.moveTo(1); 
+}
+
+</script>
+</script>
+</head>
+<body>
+<div id="audio_btn" class="off video_exist rotate" style="display: block;">
+   <audio loop="" src="img/bgm.mp3" id="media" autoplay="" preload="" ></audio>
+</div>
+<div id="content">
+	<!--page0-->	
+	<div class="section bg-1" id="section5">
+	    <img src="img/yh-home-right.png" class="yh-home-right" style="top:0; right:0; width:35%;">
+		 <img src="img/ty-title.png" class="nba-title" style="top:7%; left:-5%; width:110%;" />
+		 <!--img src="img/ty-title-dir.png" class="yingxiao-dir" style="top: 14%;  width:100%;" /-->
+		   <div class="ty-home-title ty-home" style="top:24%; width:100%;">
+		         <img src="img/ty-home-title.png" />
+				 <img src="img/ty-home-title-k.png" />
+				 <img src="img/ty-home-title-dir.png" />		 
+		   </div> 
+		   <div class="ty-home-title1 ty-home" style="top:35%; width:100%;">
+		         <img src="img/ty-home-title1.png" />
+				 <img src="img/ty-home-title1-k.png" />
+				 <img src="img/ty-home-title1-dir.png" />			 
+		   </div>	   
+		   <div class="ty-home-title2 ty-home" style="top:49%; width:105%;">
+		         <img src="img/ty-home-title2.png" />
+				 <img src="img/ty-home-title2-k.png" />
+				 <img src="img/ty-home-title2-dir.png" />				 
+		   </div>
+		   <div class="ty-home-title3 ty-home" style="top:65%; width:100%;">
+		         <img src="img/ty-home-title3.png" />
+				 <img src="img/ty-home-title3-k.png" />
+				 <img src="img/ty-home-title3-dir.png" />				 
+		   </div>
+		   <div class="ty-home-title4 ty-home" style="top:77%; width:100%;">
+		         <img src="img/ty-home-title4.png" />
+				 <img src="img/ty-home-title4-k.png" />
+				 <img src="img/ty-home-title4-dir.png" />				 
+		   </div>
+		<div class="ty-home-a" style="top:19%; left:20%;" id="page2"><img src="img/ty-home-bg.png" /><img src="img/ty-home-bg-title1.png" /></div>	
+	    <div class="ty-home-a" style="top: 30%; left: 2%;" id="page3"><img src="img/ty-home-bg.png" /><img src="img/ty-home-bg-title2.png" /></div>	
+	    <div class="ty-home-a" style="top: 45%; left: 6%;" id="page4"><img src="img/ty-home-bg.png" /><img src="img/ty-home-bg-title3.png" /></div>	
+	   	<div class="ty-home-a" style="top: 60%; left: 5%;" id="page5"><img src="img/ty-home-bg.png" /><img src="img/ty-home-bg-title4.png" /></div>	
+	    <div class="ty-home-a" style="top: 72%; left: 30%;" id="page6"><img src="img/ty-home-bg.png" /><img src="img/ty-home-bg-title5.png" /></div>		
+		 <img src="img/yh-home-left.png" class="yh-home-left" style="bottom:0; left:0; width:45%;">
+		 <a href="lm.html"><img src="img/return-home.png" style="bottom:15px; right:15px; width:20%;"/></a>
+         <!--img src="img/return-syy.png" style="bottom:15px; left:15px; width:20%;" onclick="history.go(-1)"/-->
+         	<div class="jia">
+			<div style="top:30%;left:80%;">+</div>
+			<div style="top:20%;left:40%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>	
+	</div>
+	<!--page1-->	
+	<div class="section bg-1" id="section5">
+	    <img src="img/yh-home-right.png" class="yh-home-right" style="top:0; right:0; width:35%;">
+		 <img src="img/qe-title.png" class="nba-title" style="top:7%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-1.png" class="sec-nba-1" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-qe-1-title.png" class="sec-nba-1-title" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-2.png" class="sec-nba-2" style="top:27%; left:-5%; width:110%;"  />
+		 <img src="img/sec-qe-2-title.png" class="sec-nba-2-title" style="top:27%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-3.png" class="sec-nba-3" style="top:36%; left:-5%; width:110%;" />
+		 <img src="img/sec-qe-3-title.png" class="sec-nba-3-title" style="top:36%; left:-5%; width:110%;"  />
+		 <!--silde-img-->
+		 <div class="silde-img">   
+		    <div>
+		    	<img src="img/qe-img-1.png" style="left:0; width:100%;"  />
+		    	<img src="img/qe-img-2.png" style="left:0; width:100%;"  />
+		    </div>
+		    <img src="img/silde-k.png" style="left:0; width:100%; z-index:10000;"  />
+		    <img src="img/touch.png"  class="onTouch" />
+		 </div>
+		 <!---->
+		 <img src="img/nba-aduie-q.png" class="nba-aduie-q" style="top:44%; left:3%; width:25%;"  />
+		 <img src="img/yh-home-left.png" class="yh-home-left" style="bottom:0; left:0; width:45%;">
+		  <a href="lm.html"><img src="img/return-home.png" style="bottom:15px; right:15px; width:20%;"/></a>
+         <img src="img/return-syy.png" style="bottom:15px; left:15px; width:20%;" onClick="page(1)"/>
+         		<div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>
+	</div>
+	<!--page2-->	
+	<div class="section bg-1" id="section5">
+	    <img src="img/yh-home-right.png" class="yh-home-right" style="top:0; right:0; width:35%;">
+		 <img src="img/zy-title.png" class="nba-title" style="top:7%;  left:-5%; width:110%;" />
+		 <img src="img/sec-nba-1.png" class="sec-nba-1" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-zy-1-title.png" class="sec-nba-1-title" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-2.png" class="sec-nba-2" style="top:25%; left:-5%; width:110%;"  />
+		 <img src="img/sec-zy-2-title.png" class="sec-nba-2-title" style="top:25%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-3.png" class="sec-nba-3" style="top:32%; left:-5%; width:110%;" />
+		 <img src="img/sec-zy-3-title.png" class="sec-nba-3-title" style="top:32%; left:-5%; width:110%;"  />
+		 <img src="img/sec-nba-4.png" class="sec-nba-4" style="top:39%; left:-5%; width:110%;" />
+		 <img src="img/sec-zy-4-title.png" class="sec-nba-4-title" style="top:39%; left:-5%; width:110%;"  />
+		 <!--silde-img-->
+		 <div class="silde-img" style=" ">   
+		    <div>
+		    	<img src="img/zy-img-1.png" style="left:0; width:100%;"  />
+		    	<img src="img/zy-img-2.png" style="left:0; width:100%;"  />
+		    	<img src="img/zy-img-3.png" style="left:0; width:100%;"  />
+		    </div>
+		    <img src="img/silde-k.png" style="left:0; width:100%; z-index:10000;"  />
+		    <img src="img/touch.png"  class="onTouch" />
+		 </div>
+		 <!---->
+		 <img src="img/nba-aduie-q.png" class="nba-aduie-q" style="top:44%; left:3%; width:25%;"  /> 
+		 <img src="img/yh-home-left.png" class="yh-home-left" style="bottom:0; left:0; width:45%;">
+		 <a href="lm.html"><img src="img/return-home.png" style="bottom:15px; right:15px; width:20%;"/></a>
+          <img src="img/return-syy.png" style="bottom:15px; left:15px; width:20%;" onClick="page(1)"/>
+		 
+		 		<div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>
+	</div>
+	<!--page3-->	
+	<div class="section bg-1" id="section5">
+	    <img src="img/yh-home-right.png" class="yh-home-right" style="top:0; right:0; width:35%;">
+		 <img src="img/mx-title.png" class="nba-title" style="top:7%;  left:-5%; width:110%;" />
+		 <img src="img/sec-nba-1.png" class="sec-nba-1" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-mx-1-title.png" class="sec-nba-1-title" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-2.png" class="sec-nba-2" style="top:27%; left:-5%; width:110%;"  />
+		 <img src="img/sec-mx-2-title.png" class="sec-nba-2-title" style="top:27%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-3.png" class="sec-nba-3" style="top:36%; left:-5%; width:110%;" />
+		 <img src="img/sec-mx-3-title.png" class="sec-nba-3-title" style="top:36%; left:-5%; width:110%;"  />
+		 <!--silde-img-->
+		 <div class="silde-img">   
+		    <div>
+		    	<img src="img/mx-img-1.png" style="left:0; width:100%;"  />
+		    	<img src="img/mx-img-2.png" style="left:0; width:100%;"  />
+		    </div>
+		    <img src="img/silde-k.png" style="left:0; width:100%; z-index:10000;"  />
+		    <img src="img/touch.png"  class="onTouch" />
+		 </div>
+		 <!---->
+
+		 <img src="img/nba-aduie-q.png" class="nba-aduie-q" style="top:44%; left:3%; width:25%;"  />
+		 <img src="img/yh-home-left.png" class="yh-home-left" style="bottom:0; left:0; width:45%;">
+		 <a href="lm.html"><img src="img/return-home.png" style="bottom:15px; right:15px; width:20%;"/></a>
+         <img src="img/return-syy.png" style="bottom:15px; left:15px; width:20%;" onClick="page(1)"/>
+         		<div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>
+	</div>
+	<!--page4-->	
+	<div class="section bg-1" id="section5">
+	    <img src="img/yh-home-right.png" class="yh-home-right" style="top:0; right:0; width:35%;">
+		 <img src="img/lm-title.png" class="nba-title" style="top:7%;  left:-5%; width:110%;" />
+		 <img src="img/sec-lm-title.png" class="sec-nba-1-title" style="top:13%; left:-5%; width:110%;" />
+		 <div class="lm-ul" style="padding-top:30%;">
+			  <img src="img/lv-iocn-1.png" border="0" class="lv-iocn-1">
+			  <img src="img/lv-iocn-2.png" border="0" class="lv-iocn-2">
+		 </div>
+		 <div class="lm-ul" style="padding-top:35%;">
+			  <img src="img/lv-iocn-3.png" border="0" class="lv-iocn-3">
+			  <img src="img/lv-iocn-4.png" border="0" class="lv-iocn-4">
+		 </div>
+		 <div class="lm-ul" style="padding-top:35%;">
+			  <img src="img/lv-iocn-5.png" border="0" class="lv-iocn-5">
+			  <img src="img/lv-iocn-6.png" border="0" class="lv-iocn-6">
+		 </div>
+		 <img src="img/yh-home-left.png" class="yh-home-left" style="bottom:0; left:0; width:45%;">
+		 <a href="lm.html"><img src="img/return-home.png" style="bottom:15px; right:15px; width:20%;"/></a>
+         <img src="img/return-syy.png" style="bottom:15px; left:15px; width:20%;" onClick="page(1)"/>
+         		<div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>	
+	</div> 
+	<!--page5-->	
+	<div class="section bg-1" id="section5">
+	    <img src="img/yh-home-right.png" class="yh-home-right" style="top:0; right:0; width:35%;">
+		 <img src="img/ds-title.png" class="nba-title" style="top:7%;  left:-5%; width:110%;" />
+		 <img src="img/sec-nba-1.png" class="sec-nba-1" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-ds-1-title.png" class="sec-nba-1-title" style="top:18%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-2.png" class="sec-nba-2" style="top:27%; left:-5%; width:110%;"  />
+		 <img src="img/sec-ds-2-title.png" class="sec-nba-2-title" style="top:27%; left:-5%; width:110%;" />
+		 <img src="img/sec-nba-3.png" class="sec-nba-3" style="top:36%; left:-5%; width:110%;" />
+		 <img src="img/sec-ds-3-title.png" class="sec-nba-3-title" style="top:36%; left:-5%; width:110%;"  />
+		 <!--silde-img-->
+		 <div class="silde-img">   
+		    <div>
+		    	<img src="img/ds-img-1.png" style="left:0; width:100%;"  />
+		    	<img src="img/ds-img-2.png" style="left:0; width:100%;"  />
+		    </div>
+		    <img src="img/silde-k.png" style="left:0; width:100%; z-index:10000;"  />
+		    <img src="img/touch.png"  class="onTouch" />
+		 </div>
+		 <!---->
+		 <img src="img/nba-aduie-q.png" class="nba-aduie-q" style="top:44%; left:3%; width:25%;"  />
+		 <img src="img/yh-home-left.png" class="yh-home-left" style="bottom:0; left:0; width:45%;">
+		 <a href="lm.html"><img src="img/return-home.png" style="bottom:15px; right:15px; width:20%;"/></a>
+         <img src="img/return-syy.png" style="bottom:15px; left:15px; width:20%;" onClick="page(1)"/>
+         		<div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>
+	</div>	
+    <!--page6-->	
+	<div class="section bg-1" id="section5">
+	    <img src="img/yh-home-right.png" class="yh-home-right" style="top:0; right:0; width:35%;">
+	    <img src="img/fx-title.png" style="top:20%; left:-10%; width:120%;">
+	    <img src="img/ewm.png"  style="top:35%; left:-10%; width:120%;">
+	    <img src="img/fx.png"  style="top:60%; left:-10%; width:120%;" class="rotate onFx">
+	    <img src="img/fx-pic.png"  style="top:60%; left:-10%; width:120%;" class="onFx">
+		<a href="lm.html"><img src="img/return-home.png" style="bottom:15px; right:15px; width:20%;"/></a>
+		 <img src="img/yh-home-left.png" class="yh-home-left" style="bottom:0; left:0; width:45%;">
+	</div>	
+</div>
+<div class="cd-popup" role="alert">
+	<img src="img/road.png" style="width:100%;float:right;">
+</div> <!-- cd-popup -->
+	
+</div>
+</body>
+</html>

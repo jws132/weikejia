@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320,user-scalable=no">
+<meta http-equiv="pragma" content="no-cache">
+<title>腾讯2016年汽车营销解决方案</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="css/jquery-1.8.3.min.js"></script>
+<script src="css/jquery.fullPage.min.js"></script>
+
+<style class="cp-pen-styles">
+
+canvas
+{
+	position: absolute;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+#container
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.hidden
+{
+	position: absolute;
+	visibility: hidden;
+}
+</style>
+</head>
+<body>
+<div id="audio_btn" class="off video_exist rotate" style="display: block;">
+   <audio loop="" src="img/bgm.mp3" id="media" autoplay="" preload="" ></audio>
+</div>
+<audio src="img/5697.wav" id="statrMedia" controls="controls" preload   hidden ></audio>
+<div id="content">
+
+	  <!--page1-->
+	<div class="section bg-1" id="section1" >
+		<audio src="img/poli.mp3" id="boli" controls="controls" preload   hidden ></audio>
+		<div class="content-box" >
+		 <div class="content">
+			<div class="solid-top"><div></div><div></div></div>
+			<div class="solid-bottom"><div></div><div></div></div>	
+		</div>
+	  </div>
+       <div class="">
+	   <img src="img/1.jpg" id="src_img" class="hidden" style="width:100%;height:100">
+       <div id="container" style="-webkit-perspective: 500px;"></div>	
+	   </div>
+	   <div class="boxOpem" style="display:none">
+	   	<Div id="html"></div>
+	   	<img src="img/pic-11.png" class="pic-11" border="0" style="width:100%; top:10%; left:0; " />
+	   	<!--div class="silde-img" style="top:10%;">
+	   		<img src="img/pic-1.png" class="pic-1" border="0" style="width:100%; top:10%; left:0;" />
+	   		<img src="img/pic-2.png" class="pic-2" border="0" style="width:100%; top:10%; left:0;" />
+	   		<img src="img/pic-3.png" class="pic-3" border="0" style="width:100%; top:10%; left:0;" />
+	   		<img src="img/pic-4.png" class="pic-4" border="0" style="width:100%; top:10%; left:0;" />
+	   		<img src="img/pic-5.png" class="pic-5" border="0" style="width:100%; top:10%; left:0;" />
+            <img src="img/pic-6.png" class="pic-6" border="0" style="width:100%; top:10%; left:0;" />
+	   	</div-->
+        <img src="img/page-1.png" border="0" style="width:100%; top:30%; left:0px;" class="page-1"/>	  
+	    
+		<!--div class="start" style=" left:50%; margin-left:-40px; bottom:45%; width:80px;"><img src="img/start-w-1.png" border="0" class="start-w-1" /><img src="img/start-w.png" border="0" class="start-w" /><img src="img/start-n.png" border="0" ></div-->
+		<div class="open"  style="left:50%; margin-left:-50px; bottom:18%; "><img src="img/open2016.png" border="0" /><img src="img/open2016-g.png" border="0" id="open"/></div>
+	  </div>
+	</div>
+	 <!--page3-->
+	<div class="section bg-2" id="section4">
+	     <img src="img/bg-2-1.png" border="0" style="width:100%; height:100%" class="yh-home-right"/>
+         <div class="start" style=" right:20%; bottom:5%; width:80px; height:80px;" id="idViode"><img src="img/start-q-1.png" border="0" class="start-w-1" /><img src="img/start-q-2.png" border="0" class="start-w" /><img src="img/start-q-3.png" border="0" ></div>
+        <div class="yd-home-img" style="top:63%; width:100%;">
+         	<img src="img/yq-title.png" class="yq-title">
+         	<img src="img/yq-g.png" class="yq-g">
+         </div>
+        <div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>
+	</div>	
+    <!--page2-->
+	<div class="section bg-1" id="section2">
+		<img src="img/contents-bg.png" style="height:100%; width:100%;" class="contents-bg"/>
+	    <div class="contents"><img src="img/contents-d.png" /><img src="img/contents.png" /></div>
+		<a href="tiyu.html" class="nav nav-1" style="top:20%"></a>
+		<a href="yule.html" class="nav nav-2" style="top:35%"></a>
+		<a href="yidong.html" class="nav nav-3" style="top:50%"></a>
+		<a href="xgyy.html" class="nav nav-4" style="top:65%"></a>
+        <img src="img/contents-bottom.png" style="bottom:0; width:30%;" />
+		<img src="img/contents-bottom-1.gif" style="bottom:0; width:30%;" class="contents-bottom-1"/>
+
+		<div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="delaunay.js"></script>
+<script src="TweenMax.min.js"></script>
+<script>
+var boli = document.getElementById('boli'); 
+$(function(){
+        var flag= false;
+		$('#content').fullpage({
+              anchors: ['page1', 'page2', 'page3'],
+              afterLoad:function(link,index){                                      //页面加载操作
+			      if(index=='1'){
+			      	setTimeout(function(){
+                        boli.play();
+                    },3500);
+
+					setTimeout(function(){
+					      $('.content-box').hide();
+					   },1800);
+				
+					 setTimeout(function(){
+				        contentBox();
+				        	setTimeout(function(){
+							 $('#container').css('display','none');
+							 $('.boxOpem').css('display','block');
+				         },3000);
+					},2000);
+       
+				  }
+				  if(index==2){
+                      flag=false;
+				  }
+
+				  if(index==3){
+		
+				  }
+             },
+			onLeave:function(link,index,dir){
+			  if(index==1){
+                   flag=false;	 
+			  }
+			  if(index==2){
+
+                 	return flag;
+			  }
+			  if(index==3){
+  	               console.log(flag);
+                   return flag;
+			  	   autoroll();
+			  }
+
+			}
+			
+        });
+
+
+		$('.open').click(function(){
+				flag = true;
+				$('#content').fullpage.moveSectionDown();
+		});
+	   
+	   var statrMedia = document.getElementById('statrMedia'); 
+       $('#idViode img').click(function(){
+       		flag = true;
+			$('#content').fullpage.moveSectionDown();
+			 if(statrMedia!==null){             
+			    //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+			     //alert(statrMedia.paused);
+			  if(statrMedia.paused)                     {                 
+			      statrMedia.play();//audio.play();// 这个就是播放  
+			  }else{
+			   statrMedia.pause();// 这个就是暂停
+			  }
+			 } 
+       })
+
+
+	var i=-1;
+	function autoroll(){
+		n = $('#section2').children().find('.nav').length - 1;
+		i++;
+		if(i > n){
+			i = 0;
+		}
+		play(i);
+		window.setTimeout(autoroll, 1000);
+	}
+	//切换样式		
+	function play(i) {
+		 $('#section2').children().find('.nav').eq(i).addClass('active').siblings().removeClass('active');
+	}
+
+       /** setTimeout(function(){
+		    $('.content-box').css('display','none');
+		    setTimeout(function(){
+		       $('.box').css('display','block');
+		    },1000);
+		},1800);
+
+		 setTimeout(function(){	  
+	         contentBox();
+	         setTimeout(function(){
+				 $('#container').hide();
+	         },2800);
+		},2000);  **/
+	
+})
+
+
+
+var imageWidth = document.body.scrollWidth,
+imageHeight = document.body.scrollHeight;
+
+var vertices = [],
+indices,
+boxes = [];
+
+var image,
+fragments = [],
+container = document.getElementById('container');
+
+function contentBox() {
+	image = document.getElementById('src_img');
+
+	triangulate();
+	makeBoxes();
+	makeFragments();
+};
+
+function triangulate() {
+	var x,
+y,
+dx = imageWidth / 8,
+dy = imageHeight / 8,
+offset = 0.5;
+
+	for (var i = 0; i <= imageWidth; i += dx) {
+		for (var j = 0; j <= imageHeight; j += dy) {
+			if (i && (i !== imageWidth)) x = i + randomRange(-dx * offset, dx * offset);
+			else x = i;
+
+			if (j && (j !== imageHeight)) y = j + randomRange(-dy * offset, dy * offset);
+			else y = j;
+
+			vertices.push([x, y]);
+		}
+	}
+
+	indices = Delaunay.triangulate(vertices);
+}
+
+function makeBoxes() {
+	var p0, p1, p2,
+xMin, xMax,
+yMin, yMax;
+
+	for (var i = 0; i < indices.length; i += 3) {
+		p0 = vertices[indices[i + 0]];
+		p1 = vertices[indices[i + 1]];
+		p2 = vertices[indices[i + 2]];
+
+		xMin = Math.min(p0[0], p1[0], p2[0]);
+		xMax = Math.max(p0[0], p1[0], p2[0]);
+		yMin = Math.min(p0[1], p1[1], p2[1]);
+		yMax = Math.max(p0[1], p1[1], p2[1]);
+
+		boxes.push({
+			x: xMin,
+			y: yMin,
+			w: xMax - xMin,
+			h: yMax - yMin
+		});
+	}
+}
+
+function makeFragments() {
+	var p0, p1, p2, box, fragment;
+
+	TweenMax.set(container, { perspective: 500 });
+
+	var tl0 = new TimelineMax({ repeat: -1 });
+
+	for (var i = 0; i < indices.length; i += 3) {
+		p0 = vertices[indices[i + 0]];
+		p1 = vertices[indices[i + 1]];
+		p2 = vertices[indices[i + 2]];
+		box = boxes[i / 3];
+
+		fragment = new Fragment(p0, p1, p2, box);
+
+		var rx = randomRange(30, 60) * ((i % 2) ? 1 : -1);
+		var ry = randomRange(30, 60) * ((i % 2) ? -1 : 1);
+		var tl1 = new TimelineMax();
+
+		/**TweenMax.set(fragment.canvas, {
+			y: box.y - 1000
+		});**/
+
+		tl1.to(fragment.canvas, randomRange(0.9, 1.1), {
+			y: box.y,
+			ease: Back.easeOut
+		});
+		tl1.to(fragment.canvas, 0.5, {
+			z: -100,
+			ease: Cubic.easeIn,
+			delay: 0.4
+		});
+		tl1.to(fragment.canvas, randomRange(1, 1.2), {
+			rotationX: rx,
+			rotationY: ry,
+			z: 250,
+			alpha: 0,
+			ease: Cubic.easeOut
+		});
+
+		tl0.insert(tl1);
+
+		fragments.push(fragment);
+		container.appendChild(fragment.canvas);
+	}
+}
+
+function randomRange(min, max) {
+	return min + (max - min) * Math.random();
+}
+
+Fragment = function (v0, v1, v2, box) {
+	//console.log(v0+'----'+v1+'---'+v2+'---'+box);
+	this.v0 = v0;
+	this.v1 = v1;
+	this.v2 = v2;
+	this.box = box;
+
+	this.canvas = document.createElement('canvas');
+	this.canvas.width = this.box.w;
+	this.canvas.height = this.box.h;
+	//this.canvas.width = this.box.w;
+	//this.canvas.height = this.box.h;
+	this.canvas.style.width = this.box.w + 'px';
+	this.canvas.style.height = this.box.h + 'px';
+	this.ctx = this.canvas.getContext('2d');
+
+	TweenMax.set(this.canvas, {
+		x: this.box.x,
+		y: this.box.y
+	});
+
+	this.ctx.translate(-this.box.x, -this.box.y);
+	this.ctx.beginPath();
+	this.ctx.moveTo(this.v0[0], this.v0[1]);
+	this.ctx.lineTo(this.v1[0], this.v1[1]);
+	this.ctx.lineTo(this.v2[0], this.v2[1]);
+	this.ctx.closePath();
+	this.ctx.clip();
+	this.ctx.drawImage(image, 0, 0);
+}; //@ sourceURL=pen.js
+</script>
+</body>
+</html>

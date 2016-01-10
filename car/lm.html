@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320,user-scalable=no">
+<meta http-equiv="pragma" content="no-cache">
+<title>腾讯2016年汽车营销解决方案</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="css/jquery-1.8.3.min.js"></script>
+<script src="css/jquery.fullPage.min.js"></script>
+
+<style class="cp-pen-styles">
+
+canvas
+{
+	position: absolute;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+#container
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.hidden
+{
+	position: absolute;
+	visibility: hidden;
+}
+</style>
+</head>
+<body>
+<div id="audio_btn" class="off video_exist rotate" style="display: block;">
+   <audio loop="" src="img/bgm.mp3" id="media" autoplay="" preload="" ></audio>
+</div>
+<div id="content">
+	<div class="section bg-1" id="section2">
+		<img src="img/contents-bg.png" style="height:100%; width:100%;" class="contents-bg"/>
+	    <div class="contents"><img src="img/contents-d.png" /><img src="img/contents.png" /></div>
+		<a href="tiyu.html" class="nav nav-1" style="top:20%"></a>
+		<a href="yule.html" class="nav nav-2" style="top:35%"></a>
+		<a href="yidong.html" class="nav nav-3" style="top:50%"></a>
+		<a href="xgyy.html" class="nav nav-4" style="top:65%"></a>
+        <img src="img/contents-bottom.png" style="bottom:0; width:30%;" />
+		<img src="img/contents-bottom-1.gif" style="bottom:0; width:30%;" class="contents-bottom-1"/>
+
+		<div class="jia">
+			<div style="top:30%;left:50%;">+</div>
+			<div style="top:20%;left:23%;">+</div>
+			<div style="top:80%;left:30%;">+</div>
+			<div style="top:60%;left:80%;">+</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="delaunay.js"></script>
+<script src="TweenMax.min.js"></script>
+<script>
+var boli = document.getElementById('boli'); 
+$(function(){
+        var flag= false;
+		$('#content').fullpage({
+              anchors: ['page1'],
+            
+        });
+
+
+autoroll();
+	var i=-1;
+	function autoroll(){
+		n = $('#section2').children().find('.nav').length - 1;
+		i++;
+		if(i > n){
+			i = 0;
+		}
+		play(i);
+		window.setTimeout(autoroll, 1000);
+	}
+	//切换样式		
+	function play(i) {
+		 $('#section2').children().find('.nav').eq(i).addClass('active').siblings().removeClass('active');
+	}
+
+    
+})
+
+
+
+</script>
+</body>
+</html>

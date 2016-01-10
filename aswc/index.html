@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320,user-scalable=no">
+<title>爱尚吾餐</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="css/jquery-1.8.3.min.js"></script>
+<script src="css/jquery.fullPage.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#content').fullpage({
+              anchors: ['page1', 'page2', 'page3', 'page4','page5','page6','page7','page8','page9','page10','page11','page12']
+        });
+		var audio = document.getElementById('media');  
+		//音乐播放
+		$('#audio_btn').on('click',function(){
+		   if($(this).hasClass('rotate')){
+			 $(this).removeClass("rotate");
+			 audio.pause();
+		   }else{
+			 $(this).addClass("rotate");
+			 audio.play();
+		   } 
+		 })
+	});
+</script>
+</head>
+<body>
+<div id="audio_btn" class="off video_exist rotate" style="display: block;">
+   <audio loop="" src="img/bgm.mp3" id="media" autoplay="" preload="" ></audio>
+</div>
+<div id="content">
+    <!--page1-->
+	<div class="section bgImg-1" id="section1">
+		<img src="img/ds-1-g.png" class="ds-1-g" style="bottom:0px; left:0px; width:100%;"/>
+		<img src="img/ds-1-pic.png" class="ds-1-pic"  style=" width:100%; left:0px; bottom:0"/>
+		<div class="pre-wrap"></div>
+	</div>
+	
+	<!--page2-->
+	<div class="section bgImg-2" id="section2">
+         <img src="img/ds-2-img.gif" style="width:100%; bottom:0px;" />	 
+	     <img src="img/ds-2-cl.png" style="width:100%" class="ds-2-cl"/>
+		 <div class="pre-wrap"></div>
+	</div>
+	
+    <!--page3-->
+	<div class="section bgImg-3" id="section3">
+	    <img src="img/ds-3-logo.png" class="ds-3-logo" width="320" style=" left:50%; top:230px; margin-left:-160px;" /> 
+        <img src="img/ds-3-w.png" class="ds-3-w" width="250" style=" left:50%; top:400px; margin-left:-125px;" /> 		
+     	<img src="img/ds-3-bj.png" style=" top:0; bottom:0;  width:100%;" />
+		<img src="img/ds-3-bj-g.png" class="ds-3-bj-g" style=" top:80px; width:100%;" />
+         <div class="pre-wrap"></div>
+	</div>
+	
+
+	<!--page4-->
+	<div class="section bgImg-4" id="section4">
+	    <img src="img/ds-4-ty.png" class="ds-4-ty" width="60" style="left:10%; top:10%;">
+		<img src="img/ds-4-yun.png"  width="60" style="left:10%; top:10%;">
+		<img src="img/ds-4-title.png" class="ds-4-title" width="200" style="left:32%; top:12%;">
+		<img src="img/ds-4-pic.jpg"  style="left:0; top:25%;  width:100%;">
+		<img src="img/ds-4-dir.png" class="ds-4-dir"  style="left:10%; bottom:10%;  width:80%;">
+        <div class="pre-wrap"></div>
+	</div>
+	
+	<!--page5-->
+	<div class="section bgImg-10" id="section10">
+	    <img src="img/ds-10-logo.png" class="ds-10-logo" width="70" style="right:30px; top:20px;">
+		<img src="img/ds-10-dir.png" class="ds-10-dir" style="left:10%; width:80%; top:25%">
+		<img src="img/ds-10-pic.png" class="ds-10-pic"  style="bottom:0px; width:100%;">
+	</div>
+	
+	<!--page7-->
+	<div class="section bgImg-5" id="section5">
+	    <img src="img/ds-5-title.png" class="ds-5-title"  style="top:13%; width:80%; left:10%;">
+		<img src="img/ds-5-dir.png" class="ds-5-dir" style="bottom:10%;  width:90%; left:5%;">
+		<div class="pre-wrap"></div>
+	</div>
+		
+	<!--page6-->
+	<div class="section bgImg-10" id="section11">
+		<img src="img/ds-11-pic-1.png" class="ds-11-pic-1" style="left:5%; top:10%; width:90%;">
+		<img src="img/ds-11-dir.png" class="ds-11-dir" style="left:0; top:39%; width:100%;">
+		<img src="img/ds-11-pic-2.png" class="ds-11-pic-2"  style="bottom:0px; width:90%; left:0px;">
+		<img src="img/ds-10-logo.png" class="ds-11-logo" width="70" style="right:30px; top:20px;">
+	</div>	
+		
+	<!--page8-->
+    <div class="section" id="section6">
+		<img src="img/ds-6-title.jpg" class="ds-6-title" style="left:10%; top:10%; width:80%; ">
+		<img src="img/ds-6-dir.png" class="ds-6-dir" width="130" style="left:22px; top:28%; width:35%;">
+		<img src="img/ds-6-pic.jpg" class="ds-6-pic" width="135" style="right:0px; top:25%;  width:60%;">
+		<div class="pre-wrap"></div>
+	</div>
+	
+	<!--page9-->
+	<div class="section bgImg-10" id="section12">
+		<img src="img/ds-12-dir-1.png" class="ds-12-dir-1" style="width:90%; top:12%; left:5%;">
+		<img src="img/ds-12-pic-1.png" class="ds-12-pic-1"  style="top:31%; width:95%; left:2.5%">
+		<img src="img/ds-12-pic-2.png" class="ds-12-pic-2"  style="bottom:0px;  width:95%; left:2.5%">
+		<img src="img/ds-12-dir-2.png" class="ds-12-dir-2" style=" bottom:20%; width:90%;  left:5%;">
+		<img src="img/ds-10-logo.png" class="ds-12-logo" width="70" style="right:30px; top:20px;">
+	</div>	
+	<!--page10-->
+    <div class="section bgImg-7" id="section7">
+	    <div class="ds-7-bk">
+		    <img src="img/ds-7-bk-s.png" class="ds-7-bk-s" width="16" height="70">
+			<img src="img/ds-7-bk-f.png" class="ds-7-bk-f" width="16" height="93" >
+			<img src="img/ds-7-bk-n.png" class="ds-7-bk-n" width="9" height="140" >
+		</div>
+		<img src="img/ds-7-title.png" class="ds-7-title" style="left:5%; bottom:50px; width:90%;" >
+		<div class="pre-wrap"></div>
+	</div>
+	
+	<!--page11-->
+	<div class="section bgImg-8" id="section8">
+	    <img src="img/ds-8-title.png" class="ds-8-title" style=" top:18%; width:45%; left:10%; ">
+		<img src="img/ds-8-pic.png" class="ds-8-pic" style=" top:8%; width:75%; right:5%; ">
+		<img src="img/ds-8-adr.png" class="ds-8-adr" style=" bottom:30px; width:90%; left:5%; ">
+		<div class="pre-wrap"></div>
+	</div>
+	
+	<!--page12-->
+	<div class="section bgImg-9" id="section9">
+	    <img src="img/ds-9-logo.png" class="ds-9-logo" width="120" style="margin-left:-60px; left:50%; top:40px;">
+		<img src="img/ds-9-s.png" class="ds-9-s" width="100" style="margin-left:-50px; left:50%; top:180px;">
+		<img src="img/ds-9-ewm.jpg" class="ds-9-ewm" width="150" style="margin-left:-75px; left:50%; top:220px;">
+		<img src="img/ds-9-dir.png" class="ds-9-dir" width="240" style="margin-left:-120px; left:50%; top:390px;">
+	</div>
+
+
+
+	
+</div>
+</body>
+</html>

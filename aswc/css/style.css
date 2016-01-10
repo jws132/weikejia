@@ -1,0 +1,129 @@
+body{color:#333;   font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+img{border:none;}
+.ma0{margin:0px auto;}
+
+#content{margin:0 auto;}
+.section{height:100%; width:100%; overflow:hidden;}
+.pre-wrap {  bottom: 30px; left:50%; margin-left: -12px;
+   background:url('../img/pre-wrap.png') no-repeat;
+   background-size:cover;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  -webkit-animation: slideInUp 1.5s infinite ease-in-out;
+  -moz-animation: slideInUp 1.5s infinite ease-in-out;
+  animation: slideInUp 1.5s infinite ease-in-out;
+}
+
+
+
+.pre-wrap,#section1 img,#section2 img,#section3 img,#section4 img,#section5 img,#section6 img,#section7 img,#section8 img,#section9 img,#section10 img,#section11 img,#section12 img{ position:absolute}
+
+.bgImg-1{ width: 100%; height: 100%;  background-image: url('../img/bgImg-1.jpg'); background-size: cover; background-position: 50% 50%;}
+#section1.active .ds-1-g{-webkit-animation: flash 5s ease 1s infinite both}
+#section1.active .ds-1-pic{ -webkit-transform-origin: 50% 255px; transform-origin: 50% 255px; -webkit-animation:swing 5s ease 1s 1 both; animation:swing 5s ease 1s 1 both;}
+
+
+
+.bgImg-2{ background-color:#000;}
+#section2.active .ds-2-cl{-webkit-animation: fadeInDown 1s ease 1s 1 both}
+
+.bgImg-3{ width: 100%; height: 100%;  background-image: url('../img/sd-3-img.jpg'); background-size: cover; background-position: 50% 50%;}
+#section3.active .ds-3-bj-g{-webkit-animation:flash 5s ease 1s infinite both; }
+#section3.active .ds-3-logo{-webkit-animation:bounce 1s ease 1s 1 both; }
+#section3.active .ds-3-kz{-webkit-animation:zoomInUp 3s ease 1s 1 both; }
+#section3.active .ds-3-w{-webkit-animation:flash 5s ease 1s infinite both; }
+
+
+.bgImg-4{background-color:#f9f9f9} 
+#section4.active .ds-4-ty{-webkit-animation:rotating 3s linear infinite; }
+#section4.active .ds-4-title{-webkit-animation:bounceInRight 1s ease 1s 1 both; }
+#section4.active .ds-4-pic{-webkit-animation:rubberBand 2s ease 1s 1 both;}
+#section4.active .ds-4-dir{-webkit-animation:bounceInLeft 3s ease 1s 1 both;}
+
+
+
+.bgImg-5{ width: 100%; height: 100%;  background-image: url('../img/bgImg-5.jpg'); background-size: cover; background-position: 50% 50%;} 
+#section5.active .ds-5-title{ -webkit-animation: fadeIn 2s ease 1s 1 both;  animation: fadeIn 2s ease 1s 1 both}
+#section5.active .ds-5-dir{ -webkit-animation: bounceInLeft 3s ease 1s 1 both;  animation: bounceInLeft 3s ease 1s 1 both}
+
+
+#section6.active .ds-6-title{ -webkit-animation: fadeIn  2s ease 4s  1 both; animation: fadeIn  2s ease 4s  1 both}
+#section6.active .ds-6-dir{ -webkit-animation: fadeInDown  3s ease 1s  1 both; animation: fadeInDown  3s ease 1s  1 both}
+#section6.active .ds-6-pic{ -webkit-animation: fadeInRight 1s ease 1s  1 both; animation: fadeInRight 1s ease 1s  1 both}
+
+.bgImg-7{ width: 100%; height: 100%;  background-image: url('../img/bgImg-7.jpg'); background-size: cover; background-position: 50% 50%;} 
+#section7 .ds-7-bk{height:200px; width:200px; background:url('../img/ds-7-bk.png') no-repeat;  background-size: cover; margin:30% auto; position:relative}
+#section7 .ds-7-bk img{position:absolute;left:50%; top:50%;}
+#section7 .ds-7-bk .ds-7-bk-n{ transform-origin: 50% 10px; -webkit-transform-origin: 50% 10px; margin-left:-5px; margin-top:-5px; } 
+#section7 .ds-7-bk .ds-7-bk-s{ transform-origin: 50% 5px; -webkit-transform-origin: 50% 10px; margin-left:-8px; margin-top:-5px;} 
+#section7 .ds-7-bk .ds-7-bk-f{ transform-origin: 50% 5px; -webkit-transform-origin: 50% 10px; margin-left:-8px; margin-top:-5px; } 
+#section7.active .ds-7-title{ -webkit-animation: fadeInLeft 3s ease 1s 1 both}
+#section7.active .ds-7-bk{height:200px; width:200px; background:url('../img/ds-7-bk.png') no-repeat;  background-size: cover; margin:30% auto; position:relative}
+#section7.active .ds-7-bk img{position:absolute;left:50%; top:50%;}
+#section7.active .ds-7-bk .ds-7-bk-n{ transform-origin: 50% 10px; -webkit-transform-origin: 50% 10px; margin-left:-5px; margin-top:-5px; -webkit-animation: rotating  2s linear infinite; animation: rotating  2s linear infinite} 
+#section7.active .ds-7-bk .ds-7-bk-s{ transform-origin: 50% 5px; -webkit-transform-origin: 50% 10px;  margin-left:-8px; margin-top:-5px; -webkit-animation: rotating  4s linear infinite; animation: rotating  4s linear infinite} 
+#section7.active .ds-7-bk .ds-7-bk-f{ transform-origin: 50% 5px; -webkit-transform-origin: 50% 10px;  margin-left:-8px; margin-top:-5px;  -webkit-animation: rotating  6s linear infinite; animation: rotating  6s linear infinite} 
+
+
+.bgImg-8{ width: 100%; height: 100%;  background-image: url('../img/bgImg-8.jpg'); background-size: cover; background-position: 50% 50%;} 
+#section8.active .ds-8-adr{ -webkit-animation: fadeInLeft  2s ease 3s  1 both; animation: fadeInLeft  2s ease 3s  1 both}
+#section8.active .ds-8-pic{ -webkit-animation: rotateInDownRight  0.5s ease 2s 1 both; animation: rotateInDownRight  0.5s ease 2s 1 both}
+#section8.active .ds-8-title{ -webkit-animation: rotateInDownLeft  1s ease 1s 1 both; animation: rotateInDownLeft  1s ease 1s 1 both}
+
+.bgImg-9{ width: 100%; height: 100%;  background-image: url('../img/bgImg-9.jpg'); background-size: cover; background-position: 50% 50%;} 
+#section9.active .ds-9-logo{ -webkit-animation: zoomIn 2s ease 1s 1 both; animation: zoomIn 2s ease 1s 1 both}
+#section9.active .ds-9-s{ -webkit-animation: fadeIn 2s ease 2s 1 both; animation: fadeIn 2s ease 2s 1 both}
+#section9.active .ds-9-ewm{ -webkit-animation: bounceIn 2s ease 3s 1 both; animation: bounceIn 2s ease 3s 1 both}
+#section9.active .ds-9-dir{ -webkit-animation: fadeInUp 2s ease 4s 1 both; animation: fadeInUp 2s ease 4s 1 both}
+
+
+.bgImg-10{ width: 100%; height: 100%;  background-image: url('../img/bgImg-10.jpg'); background-size: cover; background-position: 50% 50%;} 
+#section10.active .ds-10-logo{ -webkit-animation: fadeIn 1s ease 1s 1 both; }
+#section10.active .ds-10-dir{ -webkit-animation: fadeInLeft 1s ease 3s 1 both; }
+#section10.active .ds-10-pic{ -webkit-animation: fadeInUp 1s ease 1s 1 both; }
+
+#section11.active .ds-11-logo{ -webkit-animation: fadeIn 1s ease 1s 1 both; }
+#section11.active .ds-11-dir{ -webkit-animation: fadeInLeft 1s ease 1s 1 both; }
+#section11.active .ds-11-pic-1{ -webkit-animation: fadeInRight 1s ease 1s 1 both; }
+#section11.active .ds-11-pic-2{ -webkit-animation: fadeInUp 1s ease 1s 1 both; }
+
+#section12.active .ds-12-logo{ -webkit-animation: fadeIn 1s ease 1s 1 both; }
+#section12.active .ds-12-dir-1{ -webkit-animation: fadeInLeft 1s ease 2s 1 both; }
+#section12.active .ds-12-dir-2{ -webkit-animation: fadeInLeft 1s ease 2s 1 both; }
+#section12.active .ds-12-pic-1{ -webkit-animation: fadeInRight 1s ease 2s 1 both; }
+#section12.active .ds-12-pic-2{ -webkit-animation: fadeInUp 1s ease 1s 1 both; }
+
+@media screen and (max-width: 320px){
+ #content{max-width:320px;}
+}
+
+@media screen and (max-width: 640px){
+ #content{max-width:640px;}
+}
+
+#audio_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 200;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+	
+}
+.off {
+    background-image: url('../img/yy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.rotate{
+  -webkit-animation: rotating 1.2s linear infinite;
+  -moz-animation: rotating 1.2s linear infinite;
+  -o-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+}
+@-webkit-keyframes rotating{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg);}}
+@keyframes rotating{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@-moz-keyframes rotating{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(360deg)}}

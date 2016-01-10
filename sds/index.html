@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>傲胜摩术椅</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="css/jquery-1.8.3.min.js"></script>
+<script src="css/jquery.fullPage.min.js"></script>
+
+<script type="text/javascript">
+
+var sum = 0;
+var flag= false;
+	$(document).ready(function() {
+	   var myVid=document.getElementById("video1");
+		$('#content').fullpage({
+		      continuousVertical:false,
+              anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page5'],
+			  afterLoad:function(link,index){                                      //页面加载操作
+			  
+			      if(index=='2'){
+						setTimeout(function(){$('.ds-2-shou').attr('src','img/ds-2-s2.png');},800);
+						setTimeout(function(){$('.ds-2-shou').attr('src','img/ds-2-s3.png');},900);
+						setTimeout(function(){$('.ds-2-shou').attr('src','img/ds-2-s4.png');},1000);				  
+				  }
+				  if(index=='5'){
+					   setTimeout(function(){
+							   $('.ds-6-pic').css({'animation-play-state':'running','-webkit-animation-play-state':'running'});
+						},
+						2000);
+				  }
+            },
+			onLeave:function(link,index,dir){
+			  if(index==3){
+					sum=0;
+					$('#ds-2-dt').css('width','0%');
+					$('#onShu').attr('src','img/ds-2-shu1.png');
+					return flag;
+			  }
+			  if(index==4 && dir=='down'){
+			      flag= false;
+			  }
+			  if(index==5){
+				console.log(111111);
+			    return flag;
+			  }
+			  
+			  if(index==6){
+					 $("#video1").hide();
+					 myVid.pause();
+			  }
+			}
+			
+        });
+		
+		document.getElementById('ds-2-shou').addEventListener('touchstart', function() {
+		   sum = sum + 1;
+			if(sum < 11){
+			console.log(sum);
+			   switch(sum){
+					case 3:
+					     $('#ds-2-dt').css('width','30%');
+					     $('#onShu').attr('src','img/ds-2-shu2.png');
+						break;
+					case 6:
+					     $('#ds-2-dt').css('width','60%');
+						 $('#onShu').attr('src','img/ds-2-shu3.png');
+						 break; 
+					case 10:
+					     flag = true;
+					     $('#ds-2-dt').css('width','100%');
+						 $('#onShu').attr('src','img/ds-2-shu4.png');
+						 $('#content').fullpage.moveSectionDown();
+						 break; 						 
+					default:
+					     $('#ds-2-dt').css('width',sum+'0%');
+						break;
+				}			
+			}else{
+			    $('#ds-2-dt').css('width','100%');
+			}		
+		
+		
+	    }, false);
+		
+		$('#onLink').click(function(){
+				flag = true;
+				$('#content').fullpage.moveSectionDown();
+		});
+
+        //视频   
+		$("#video1").hide();
+		$('#ds-5-adv').click(function(){
+			//$("body").append("<div class='overlay'></div>");
+			$("#video1").show();
+			myVid.load();
+			myVid.play();
+		})
+		
+		$('#video1').click(function(){
+			$(this).hide();
+			myVid.pause();
+		})
+
+      var audio = document.getElementById('media');  
+		//音乐播放
+		$('#audio_btn').on('click',function(){
+		   if($(this).hasClass('rotate')){
+			 $(this).removeClass("rotate");
+			 audio.pause();
+		   }else{
+			 $(this).addClass("rotate");
+			 audio.play();
+		   } 
+		 })
+		
+	});
+
+	//第一屏显示文字
+    /**var index=0;
+	function type(){
+		document.getElementById("dsTitle").innerText = $('#dsText').html().substring(0,index++);
+	}
+    setInterval(type, 500);**/
+</script>
+
+</head>
+<body>
+<div id="audio_btn" class="off video_exist rotate" style="display: block;">
+   <audio loop="" src="img/bgm.mp3" id="media" autoplay="" preload=""></audio>
+</div>
+<div id="content">
+	<div class="section bgImg-1" id="section1">
+	    <img src="img/sd-shu.png"  width="200" class="sd-shu" style="top:10%; left:15%; width:70%;"/>
+        <div class="title" style="top:28%; width:90%; left:5%;">圣诞前夜，一场大雪压弯了圣诞树，</div>
+		<div class="title1" style="top:34%; width:90%; left:5%;">藏在树下的礼物也不见了。</div>
+		<img src="img/ds-1-title.png"  width="300" class="ds-1-title" style="top:40%; left:10%; width:80%;"/>
+		<img src="img/ds-logo.png" class="ds-logo" style="bottom:50px;"/>
+		<div class="pre-wrap"></div>
+	</div>
+	
+	<div class="section bgImg-1" id="section2">
+	    <img src="img/ds-2-title.png" style="left:5%; top:8%; width:90%;">
+		<img src="img/ds-2-name.png" class="ds-2-name" style="left:20%; top:19%; width:60%;">
+	    <img src="img/ds-2-shu1.png" class="ds-2-shu1" id="onShu" value="0" style="left:20%; width:60%; bottom:10%;">
+	    <img src="img/ds-2-yun.png" class="ds-2-yun"  style="left:0px; bottom:0px; width:100%;">
+		<img src="img/ds-2-s1.png" class="ds-2-shou" id="ds-2-shou" style="left:37%; bottom:25%; width:35%; ">
+		<div class="ds-2-du">
+		   <div class="ds-2-dt" id="ds-2-dt" style="width:0%;"></div>
+		   <img src="img/ds-2-dm.png" style="height:37px; top:0px; right:-5px;">
+		</div>
+		<img src="img/ds-logo.png" class="ds-logo" style="bottom:20px;"/>
+		<div class="pre-wrap"></div>
+	</div>
+	
+	<div class="section bgImg-1" id="section3">
+	    <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+	    <img src="img/ds-3-title.png" class="ds-3-title" style="width:60%; left:20%; top:5%">
+	    <!--img src="img/ds-3-hua.png" class="ds-3-hua" style="width:80%; left:10%; bottom:40%;"-->
+		<img src="img/ds-2-shu4.png" class="ds-2-shu4" style="left:20%; width:60%; bottom:10%;">
+	    <img src="img/ds-2-yun.png" class="ds-2-yun"  style="left:0px; bottom:-30px; width:100%;">
+		<img src="img/ds-logo.png" class="ds-logo" style="bottom:5%"/>
+		<div class="pre-wrap"></div>
+	</div>
+
+	<div class="section bgImg-4" id="section4">
+	    <img src="img/ds-2-shu4.png" class="ds-2-shu4" style="left:13%; width:75%; bottom:12%;">
+		<a href="#"><img src="img/ds-4-lw-4.png" class="ds-4-lw-4" style="left: 10%; width: 30%; bottom: 12%"></a>
+		<img src="img/ds-4-lw-1.png" class="ds-4-lw-1" style="left: 34%; width: 40%; bottom: 15%;">
+		<img src="img/ds-4-lw-2.png" class="ds-4-lw-2" style="left: 37%; width: 30%; bottom: 7%;">
+		<img src="img/ds-4-lw-3.png" class="ds-4-lw-3" id="onLink" style="right: 10%; width: 25%; bottom: 13%;">
+	    <img src="img/ds-4-yun.png" class="ds-4-yun"  style="left:0px; bottom:0px; width:100%;">
+		<img src="img/ds-logo.png" class="ds-logo"/>
+		<div class="pre-wrap"></div>
+	</div>
+	
+    <div class="section bgImg-5" id="section6">
+	    <img src="img/ds-logo.png" class="ds-6-logo"  style="right:20px; top:20px; width:30%;">
+		<img src="img/ds-6-title-yc-1.png" class="ds-6-title-yc-1" style="width:60%; left:0px; top:17%; ">
+		<img src="img/ds-6-title-yc-2.png" class="ds-6-title-yc-2" style="width:60%; right:0px; top:12%; ">
+		<img src="img/ds-6-title-yc-3.png" class="ds-6-title-yc-3" style="width:60%; right:15%; top:30%; ">
+		<img src="img/ds-6-title.png" class="ds-6-title" width="135" style="width:20%; left:40%; top:15%; ">
+		<div class="ds-6-pic" style=" bottom: 0;  left: 50%;"></div>
+		<div class="pre-wrap"></div>
+	</div>
+	
+	<div class="section bgImg-5" id="section5">
+	    <img src="img/ds-5-title.png" class="ds-5-title" style="left:20%; width:60%; top:5%;">
+		<img src="img/ds-5-adv.png" id="ds-5-adv" style="left:10%; width:50%; top:20%;">
+		<video id="video1" src="http://www.weikejia.net/h5view/mp4/aosheng2.mp4"></video>
+		<img src="img/ds-5-dir.png"   style="right:12%; top:23%; width:20%;">
+	    <img src="img/ds-5-pic.png"  style="left:20%; width:60%; bottom:8%; ">
+		<img src="img/ds-5-li.png" class="ds-5-li" style="right:20px; bottom:20px; width:20%;">
+		<div class="pre-wrap"></div>
+	</div>
+</div>
+<script src="css/yh.js"></script>
+</body>
+</html>

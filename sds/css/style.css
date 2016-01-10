@@ -1,0 +1,184 @@
+body{color:#333;   font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+img{border:none;}
+.ma0{margin:0px auto;}
+canvas {
+	cursor: crosshair;
+	display: block;
+}
+#content{margin:0 auto;}
+.section{height:100%; width:100%; overflow:hidden;}
+.ds-logo{ left:30%; bottom:30px; width: 40%;}
+.pre-wrap {  bottom: 30px; left:50%; margin-left: -12px;
+   background:url('../img/pre-wrap.png') no-repeat;
+   background-size:cover;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  -webkit-animation: slideInUp 1.5s infinite ease-in-out;
+  -moz-animation: slideInUp 1.5s infinite ease-in-out;
+  animation: slideInUp 1.5s infinite ease-in-out;
+}
+#video1 {
+  position: absolute;
+  z-index: 999999999999999999;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.bgImg-1{ width: 100%; height: 100%;  background-image: url('../img/bgImg-1.jpg'); background-size: cover; background-position: 50% 50%;}
+
+#section1 {text-align:center;}
+.pre-wrap,#section1 img,#section1 .title,#section1 .title1,#section2 img,#section3 img,#section4 img,#section5 img,#section6 img{ position:absolute}
+#section1 .title,#section1 .title1{color:#fff; font-weight:bold; font-size:1.1rem; text-align:center; }
+#section1.active .title{-webkit-animation: fadeInRight 2s ease 0.2s 1 both}
+#section1.active .title1{-webkit-animation: fadeInRight 4s ease 0.2s 1 both}
+#section1.active .sd-shu{-webkit-animation: bounceIn 2s ease 0.2s 1 both}
+#section1.active .ds-1-title{-webkit-animation: zoomInDown 2s ease 2s 1 both}
+#section1.active .ds-1-x{-webkit-animation: ds-1-x  2s ease 4.5s infinite both}
+@-webkit-keyframes ds-1-x { from, 50%, to { opacity: 0; } 25%, 75% { opacity: 1;  }}
+@keyframes ds-1-x ds-1-x { from, 50%, to { opacity: 0; } 25%, 75% { opacity: 1;  }}
+
+
+#section2 .ds-2-du{ background-image: url(../img/ds-2-du.png); background-size: cover; position:absolute; left:50%; margin-left:-125px; bottom:11%; width:250px; height:37px; }
+#section2 .ds-2-dt{ background-image: url(../img/ds-2-dt.png); background-size: cover; height:37px; width:250px;  }
+#section2.active .ds-2-title{-webkit-animation: bounceInDown  1s ease 1s 1 both}
+#section2.active .ds-2-name{-webkit-animation:flash 5s ease 1s infinite both}
+#section2.active .ds-2-du{ background-image: url(../img/ds-2-du.png); background-size: cover; position:absolute; left:50%; margin-left:-125px; bottom:11%; width:250px; height:37px; }
+#section2.active .ds-2-dt{ background-image: url(../img/ds-2-dt.png); background-size: cover; height:37px; width:250px;  }
+#section2.active .ds-2-dt{ background-image: url(../img/ds-2-dt.png); height:37px; width:250px;  }
+#section2.active .ds-2-shou{-webkit-animation:ds-2-shou 2s ease 1s 1 both}
+@-webkit-keyframes ds-2-shou{
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+#section3.active .ds-3-hua{-webkit-animation:ds-3-hua 5s ease 1s infinite both }
+#section3.active .ds-3-title{-webkit-animation:zoomInDown 1s ease 1s 1 both}
+@-webkit-keyframes ds-3-hua {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  50%{
+    opacity: 1;
+	-webkit-transform:translate3d(0, 0, 0); 
+
+  }
+  100%{
+	-webkit-transform:scale(1.5,1.5); 
+    opacity: 0;
+  }
+}
+@keyframes ds-3-hua {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  50%{
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}
+
+
+
+.bgImg-4{ width: 100%; height: 100%;  background-image: url('../img/bgImg-4.jpg'); background-size: cover; background-position: 50% 50%;} 
+#section4.active .ds-3-hua{-webkit-animation:bounceInUp 2s ease 1s infinite both}
+#section4.active .ds-4-lw-1{-webkit-animation:bounceInUp 2s ease 1s 1 both}
+#section4.active .ds-4-lw-2{-webkit-animation:bounceInUp 2s ease 3s 1 both}
+#section4.active .ds-4-lw-3{-webkit-animation:swing 2s ease 1s infinite both}
+#section4.active .ds-4-lw-4{-webkit-animation:swing 3s ease 2s infinite both}
+
+.bgImg-5{ width: 100%; height: 100%;  background-image: url('../img/bgImg-5.jpg'); background-size: cover; background-position: 50% 50%;} 
+#section5.active .ds-5-title{ -webkit-animation: zoomInDown  1s ease  1 both}
+#section5.active .ds-5-adv{ -webkit-animation: rotateIn 5s ease 1 both}
+#section5.active .ds-5-dir{ -webkit-animation: slideInRight  3s ease  1 both}
+#section5.active .ds-5-pic{ -webkit-animation: bounceInUp  3s ease 1s 1 both}
+#section5.active .ds-5-li{ -webkit-animation:flash 2s ease 3s 2 both}
+
+#section6.active .ds-6-logo{ -webkit-animation: fadeIn  1s ease 1s  1 both}
+#section6.active .ds-6-title{ -webkit-animation: fadeInLeftBig  1s ease 1s  1 both}
+#section6.active .ds-6-title-yc-1{-webkit-animation: fadeInLeft  5s ease 1s  1 both}
+#section6.active .ds-6-title-yc-2{-webkit-animation: fadeInRight 5s ease 2s  1 both}
+#section6.active .ds-6-title-yc-3{-webkit-animation: fadeInRight 5s ease 3s  1 both}
+#section6.active .ds-6-pic{
+    background: url('../img/cs.png') no-repeat 0 0;
+	width: 459.19px;
+	margin-left: -229.595px;
+	background-size:600%;
+	position:absolute; 
+	height: 255px;
+    animation: img5 steps(5) 0.8s 1 forwards;
+    -webkit-animation: img5 steps(5) 0.8s 1 forwards;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+@-webkit-keyframes img5 {
+	100% {
+		background-position:-2295.81px 0;
+	}
+
+}
+@keyframes img5 {
+	100% {
+		background-position:-2295.81px 0;
+	}}
+
+@media screen and (max-width: 500px) { 
+	.ds-5-pic { left:15%!important; width:70%!important; bottom:2%!important; } 
+} 	
+
+
+#audio_btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 200;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+	
+}
+.off {
+    background-image: url('../img/yy.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.rotate{
+  -webkit-animation: rotating 1.2s linear infinite;
+  -moz-animation: rotating 1.2s linear infinite;
+  -o-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+}
+@-webkit-keyframes rotating{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}
+@keyframes rotating{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@-moz-keyframes rotating{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(360deg)}}

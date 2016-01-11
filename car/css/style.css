@@ -20,7 +20,7 @@ ul,li{list-style:none; margin:0px; padding:0px;}
 
 .nba,.zq,.ayh,.nav,.pre-wrap,.start,.open,.contents,.solid-bottom,#loadding,.section img,.ty-home,.yd-home-img,.jia div,.silde-img img{ position:absolute}
 .start,.open{ width:100px;}
-.start img,.open img,.nba img,.zq img,.ayh img,.contents img,.ty-home img,.yd-home-img img,.silde-img img,.silde-img{width:100%;}
+.start img,.open img,.nba img,.zq img,.ayh img,.contents img,.ty-home img,.yd-home-img img,.silde-img img,.silde-img,#loadd{width:100%;}
 
 
 .bg-1{ width: 100%; height: 100%;  background-image: url('../img/bg.jpg'); background-size: cover; background-position: 50% 50%;}
@@ -33,7 +33,7 @@ ul,li{list-style:none; margin:0px; padding:0px;}
 .contents-bottom-1{-webkit-animation:flash 1s linear 1s infinite}
 
 
-.section.active .pic-11{ -webkit-animation:  pic-11 1s ease 3s 1 both}
+.section.active .pic-11{ -webkit-animation:  pic-11 1s ease 2fs 1 both}
 @-webkit-keyframes pic-11 {
   from {
     opacity: 0;
